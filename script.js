@@ -59,5 +59,13 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+//Function to play the game 5 times.
 
-console.log(playRound(getHumanChoice(), getComputerChoice()));
+function playGame() {
+    for (let i = 0; i < 5; i++) {
+        const humanChoice = getHumanChoice();
+        const computerChoice = getComputerChoice();
+        console.log(playRound(humanChoice, computerChoice));
+    }
+}
+console.log(playGame(getHumanChoice(), getComputerChoice()));
